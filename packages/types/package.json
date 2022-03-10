@@ -1,0 +1,9 @@
+{
+  "name": "@saul/types",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "dependencies": {
+    "typescript": "^4.6.2"
+  }
+}

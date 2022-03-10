@@ -1,0 +1,27 @@
+{
+  "name": "@saul/root",
+  "private": true,
+  "devDependencies": {
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "husky": "^7.0.0",
+    "lerna": "^4.0.0"
+  },
+  "author": "mohamedtharout190@gmail.com",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "commit": "git-cz",
+    "diff": "lerna diff",
+    "new-version": "lerna version --conventional-commits --yes",
+    "test": "lerna run test --since"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
